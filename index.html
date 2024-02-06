@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab. Nelayan Kode</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <i class="fa fa-bars"></i> <h2 class="title">NELAYAN KODE</h2>
+        </div>
+        <div class="header-right"><i class="fa fa-moon-o"></i></div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="post-title"><div class="title-icon"><i class="fa fa-anchor "></i></div>Tutorial JavaScript : Menambahkan dan Menghapus Attribut Class Pada Tag HTML dengan JavaScript</div>
+            <div class="content">
+                <div class="content-left">
+                    <div class="code">
+                        <div class="code-h">
+                            <div class="code-t">HTML</div>
+                        </div>
+                        <div class="code-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                    <div class="code">
+                        <div class="code-h">
+                            <div class="code-t">CSS</div>
+                        </div>
+                        <div class="code-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                    <div class="code">
+                        <div class="code-h">
+                            <div class="code-t">JS</div>
+                        </div>
+                        <div class="code-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                </div>
+                <div class="content-right"></div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script>
+        var t_post = $('.post-title').innerHeight();
+        var t_main = $('.main-content').height();
+        var hasil = t_main-t_post;
+        $('.content').height(hasil);
+
+        var t_code = $('.code').height();
+        var t_code_c = t_code-85;
+        $('.code-c').height(t_code_c);
+
+    </script>
+</body>
+</html>
