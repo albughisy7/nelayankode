@@ -46,14 +46,20 @@
     <footer></footer>
 
     <script>
-        var t_post = $('.post-title').innerHeight();
-        var t_main = $('.main-content').height();
-        var hasil = t_main-t_post;
-        $('.content').height(hasil);
+        function WindowResize(){
+            var t_post = $('.post-title').innerHeight();
+            var t_main = $('.main-content').height();
+            var hasil = t_main-t_post;
+            $('.content').height(hasil);
+    
+            var t_code = $('.code').height();
+            var t_code_c = t_code-85;
+            $('.code-c').height(t_code_c);
+        }
 
-        var t_code = $('.code').height();
-        var t_code_c = t_code-85;
-        $('.code-c').height(t_code_c);
+        WindowResize();
+
+        window.addEventListener("resize", WindowResize);
 
     </script>
 </body>
