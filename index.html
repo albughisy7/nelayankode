@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab. Nelayan Kode</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
-<body>
-    <header>
-        <div class="header-left">
-            <i class="fa fa-bars"></i> <h2 class="title">NELAYAN KODE</h2>
-        </div>
-        <div class="header-right"><i class="fa fa-moon-o"></i></div>
-    </header>
-    <main>
-        <div class="main-content">
-            <div class="post-title"><div class="title-icon"><i class="fa fa-anchor "></i></div>Tutorial JavaScript : Menambahkan dan Menghapus Attribut Class Pada Tag HTML dengan JavaScript</div>
-            <div class="content">
-                <div class="content-left">
-                    <div class="code">
-                        <div class="code-h">
-                            <div class="code-t">HTML</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lab. Nelayan Kode</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="jquery/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <i class="fa fa-bars"></i>
+                <h2 class="title">NELAYAN KODE</h2>
+            </div>
+            <div class="header-right"><i class="fa fa-moon-o"></i></div>
+        </header>
+        <main>
+            <div class="main-content">
+                <!-- <div class="post-title">
+                    <div class="title-icon"><i class="fa fa-anchor"></i></div>
+                    Tutorial JavaScript : Menambahkan dan Menghapus Attribut
+                    Class Pada Tag HTML dengan JavaScript
+                </div> -->
+                <div class="content">
+                    <div class="content-left">
+                        <div class="code">
+                            <div class="code-h">
+                                <div class="code-t">
+                                    <i class="fa-brands fa-html5 code-i"></i
+                                    >HTML
+                                </div>
+                            </div>
+                            <textarea class="code-c" id="c-html">
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;button class = &quot;btn&quot; onclick = &quot;myFunction()&quot;&gt;Click me&lt;/button&gt;</textarea
+                            >
                         </div>
-                        <div class="code-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                        <div class="code">
+                            <div class="code-h">
+                                <div class="code-t">
+                                    <i class="fa-brands fa-css3-alt code-i"></i
+                                    >CSS
+                                </div>
+                            </div>
+                            <textarea class="code-c" id="c-css">
+h1{
+    color: red;
+}
+.btn{
+    padding: 10px 20px;
+}</textarea
+                            >
+                        </div>
+                        <div class="code">
+                            <div class="code-h">
+                                <div class="code-t">
+                                    <i class="fa-brands fa-square-js code-i"></i
+                                    >JS
+                                </div>
+                            </div>
+                            <textarea class="code-c" id="c-js">
+function myFunction(){
+    alert("Welcome");
+}
+</textarea
+                            >
+                        </div>
+                        <div class="resizer"></div>
                     </div>
-                    <div class="code">
-                        <div class="code-h">
-                            <div class="code-t">CSS</div>
-                        </div>
-                        <div class="code-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                    </div>
-                    <div class="code">
-                        <div class="code-h">
-                            <div class="code-t">JS</div>
-                        </div>
-                        <div class="code-c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    <div class="content-right">
+                        <iframe id="output" frameborder="0"></iframe>
                     </div>
                 </div>
-                <div class="content-right"></div>
             </div>
-        </div>
-    </main>
-    <footer></footer>
+        </main>
+        <footer></footer>
 
-    <script>
-        function WindowResize(){
-            var t_post = $('.post-title').innerHeight();
-            var t_main = $('.main-content').height();
-            var hasil = t_main-t_post;
-            $('.content').height(hasil);
-    
-            var t_code = $('.code').height();
-            var t_code_c = t_code-85;
-            $('.code-c').height(t_code_c);
-        }
-
-        WindowResize();
-
-        window.addEventListener("resize", WindowResize);
-
-    </script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
