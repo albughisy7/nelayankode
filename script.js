@@ -11,7 +11,6 @@ function changeHeight() {
 }
 
 changeHeight();
-
 window.addEventListener("resize", changeHeight);
 
 var resizer = document.querySelector(".resizer"),
