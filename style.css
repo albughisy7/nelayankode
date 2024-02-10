@@ -48,8 +48,8 @@ header {
     justify-content: space-between;
 }
 
-header i.fa {
-    font-size: 22px;
+header i.fa-solid, header i.fa {
+    font-size: 20px;
 }
 
 header .header-left {
